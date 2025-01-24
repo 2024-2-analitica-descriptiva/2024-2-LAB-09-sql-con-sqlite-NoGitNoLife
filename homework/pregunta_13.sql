@@ -43,3 +43,9 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+
+--el enunciado esta mal, hay que redondear a 2 decimales!! 
+SELECT K0, ROUND(AVG(c12), 2) AS "avg(c12)"
+FROM tbl1
+WHERE c13 > 400
+GROUP BY K0;
